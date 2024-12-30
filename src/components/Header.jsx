@@ -22,6 +22,8 @@ const Header = () => {
       disablePageScroll();
     }
   };
+ 
+  const logo = "src/assets/FLOW.png"
 
   const handleClick = () => {
     if (!openNavigation) return;
@@ -38,7 +40,7 @@ const Header = () => {
     >
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
         <a className="block w-[12rem] xl:mr-8" href="#hero">
-          <img src='src/assets/FLOW.png' width={100} height={40} alt="FlowAI" />
+          <img src={logo} width={100} height={40} alt="FlowAI" />
         </a>
 
         <nav
